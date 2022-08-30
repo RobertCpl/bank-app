@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>bank-app</h1>
+    </header>
+    <main class="container">
+        <section class="history">
+            <div class="history__header">operacje</div>
+            <ul class="history__list"></ul>
+            <div class="history__total">
+                <div class="total__tittel">Total</div>
+                <div class="total__amount">0</div>
+            </div>
+        </section>
+        <section class="transfers">
+            <div class="transfers__header">Wykonaj przelew</div>
+            <form class="transfer">
+                <div class="transfer__input">
+                    <label for="number">Numer konta</label>
+                    <input type="number" name="number" class="transfer__account" id="number"></input>
+                </div>
+                <div class="transfer__input">
+                    <label for="description">Opis</label>
+                    <input type="text" name="description" class="transfer__description" id="description"></input>
+                </div>
+                <div class="transfer__input">
+                    <label for="amount">Kwota</label>
+                    <input type="number" name="amount" class="transfer__amount" id="amount"></input>
+                </div>
+                <input class="transfer__btn" type="submit" value="Wyslij">
+            </form>
+        </section>
+        <section class="transfers loans">
+            <div class="transfers__header">Weż pożyczkę</div>
+            <form class="transfer loan">
+                <div class="transfer__input">
+                    <label for="amount">Kwota</label>
+                    <input type="number" name="amount" class="loan__amount" id="amount"></input>
+                </div>
+                <div class="transfer__input">
+                    <label for="period">Okres</label>
+                    <input type="number" name="period" class="loan__period" id="period"></input>
+                </div>
+                <input class="transfer__btn loan__btn" type="submit" value="Wyslij">
+            </form>
+        </section>
+        <section class="schedule">
+            <div class="schedule__header">Harmonogram</div>
+
+        </section>
+    </main>
+
+
+    <script type='module' src="index.js"></script>
+</body>
+
+</html>
