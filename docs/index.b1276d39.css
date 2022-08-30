@@ -1,0 +1,158 @@
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Montserrat:wght@400;700&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Montserrat, sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #faebd7b1;
+}
+
+.header {
+  height: 5vh;
+  background-color: #5f9ea0;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  color: #f0f8ff;
+  margin-left: 1rem;
+  font-size: 4rem;
+}
+
+section {
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100vw;
+  height: 95vh;
+  grid-gap: 2rem;
+  background-color: #f0f8ff;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: 60% 1fr;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+}
+
+.container .history {
+  background-color: #fff;
+  grid-area: 1 / 1 / 7 / 2;
+  font-size: 2rem;
+}
+
+.container .history .history__header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.container .history .history__list {
+  margin-bottom: 1rem;
+  list-style: none;
+}
+
+.container .history .history__list .history__item {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.container .history .history__total {
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 700;
+  display: flex;
+}
+
+.container .history .history__total .total__tittel {
+  margin-right: 1rem;
+}
+
+.container .transfers {
+  background-color: #b5ec7f;
+  grid-area: 1 / 2 / 3 / 3;
+  font-size: 2rem;
+}
+
+.container .transfers .transfers__header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.container .transfers .transfer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  display: flex;
+}
+
+.container .transfers .transfer .transfer__input {
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.container .transfers .transfer .transfer__input label {
+  width: 40%;
+  display: inline-block;
+}
+
+.container .transfers .transfer .transfer__input input {
+  width: 55%;
+  height: 3rem;
+  border: none;
+}
+
+.container .transfers .transfer .transfer__btn {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #4a69d8;
+  border: none;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+}
+
+.container .loans {
+  background-color: #e7de7a;
+  grid-area: 3 / 2 / 5 / 3;
+}
+
+.container .schedule {
+  background-color: #6495ed;
+  grid-area: 5 / 2 / 7 / 3;
+  overflow-y: auto;
+}
+
+.container .schedule .schedule__header {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.container .schedule .schedule__box {
+  background-color: #faebd7b1;
+  border-radius: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.b1276d39.css.map */
